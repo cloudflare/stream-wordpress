@@ -8,16 +8,20 @@
   * WordPress Dependencies
   */
  const defaultConfig = require( '@wordpress/scripts/config/webpack.config.js' );
+ 
+ module.exports = ( env ) => {
 
- module.exports = {
-     ...defaultConfig,
-     ...{
-            entry: {
-                blocks: './src/blocks.js'
-            },
-            output: {
-                filename: '[name].build.js',
-                path: resolve( process.cwd(), 'dist' )
+    return {
+        ...defaultConfig,
+        ...{
+                mode: env.dev ? 'development' : 'production',
+                entry: {
+                    blocks: './src/blocks.js'
+                },
+                output: {
+                    filename: '[name].build.js',
+                    path: resolve( process.cwd(), 'dist' )
+                }
             }
         }
  }
