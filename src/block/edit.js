@@ -347,7 +347,6 @@ class CloudflareStreamEdit extends Component {
 						</div>
 						<IconButton
 							isDefault
-							isLarge
 							icon="update"
 							label={ __( 'Retry' ) }
 							onClick={ switchToEditing }
@@ -374,7 +373,6 @@ class CloudflareStreamEdit extends Component {
 						</div>
 						<IconButton
 							isDefault
-							isLarge
 							icon="update"
 							label={ __( 'Retry' ) }
 							onClick={ switchToEditing }
@@ -400,7 +398,6 @@ class CloudflareStreamEdit extends Component {
 							value={ this.props.attributes }
 							render={ () => (
 								<IconButton
-									isLarge
 									label={ __( 'Stream Library' ) }
 									onClick={ this.open }
 									className="editor-media-placeholder__browse-button"
@@ -411,7 +408,6 @@ class CloudflareStreamEdit extends Component {
 						/>
 						<IconButton
 							isDefault
-							isLarge
 							icon="cancel"
 							label={ __( 'Cancel' ) }
 							onClick={ switchFromEditing }
@@ -431,7 +427,6 @@ class CloudflareStreamEdit extends Component {
 					instructions="Select a file from your library."
 				>
 					<FormFileUpload
-						isLarge
 						multiple
 						className="editor-media-placeholder__upload-button"
 						onChange={ switchToUploading }
@@ -445,7 +440,6 @@ class CloudflareStreamEdit extends Component {
 						value={ this.props.attributes }
 						render={ () => (
 							<IconButton
-								isLarge
 								label={ __( 'Stream Library' ) }
 								onClick={ this.open }
 								className="editor-media-placeholder__browse-button"
@@ -456,7 +450,6 @@ class CloudflareStreamEdit extends Component {
 					/>
 					<IconButton
 						isDefault
-						isLarge
 						icon="cancel"
 						label={ __( 'Cancel' ) }
 						onClick={ switchFromEditing }
