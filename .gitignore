@@ -1,0 +1,10 @@
+**/*.min.js
+**/*.build.js
+node_modules
+**/node_modules/**
+dist
+dist/*
+build
+**/build/**
+.vscode/
+**/.DS_Store
